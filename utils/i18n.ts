@@ -29,7 +29,8 @@ i18n.configure({
     "vi",
     "zh_cn",
     "zh_sg",
-    "zh_tw"
+    "zh_tw",
+    "hun"
   ],
   directory: join(__dirname, "..", "locales"),
   defaultLocale: "en",
