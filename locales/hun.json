@@ -1,0 +1,174 @@
+{
+	"clip": {
+		"description": "Kliphang lejátszása",
+		"usagesReply": "Használat: /clip<name>",
+		"errorQueue": "A klip nem játszható le, mert aktív várólista van.",
+		"errorNotChannel": "Először csatlakoznod kell egy hangcsatornához!"
+	},
+	"clips": {
+		"description": "Az összes klip listájas"
+	},
+	"help": {
+		"description": "Az összes parancs és leírás megjelenítése",
+		"embedTitle": "{botname} segítség",
+		"embedDescription": "Az összes parancs listája"
+	},
+	"invite": {
+		"description": "Meghívo link küldése"
+	},
+	"loop": {
+		"description": "Ismétlés aktiválása",
+		"errorNotQueue": "Nincs mit ismételnem.",
+		"result": "Ismétlés aktiválva {loop}"
+	},
+	"lyrics": {
+		"description": "Szerezzen dalszövegeket a jelenleg lejátszott dalhoz",
+		"errorNotQueue": "Nincs semmilyen zene amit lejátszhatnék.",
+		"lyricsNotFound": "Nincs Lejátszási lista ehhez: {title}.",
+		"embedTitle": "{title} - Lejátszási lista"
+	},
+	"move": {
+		"description": "Zenék áthelyezése a lejátszási listában",
+		"errorNotQueue": "Nincs semmi várólistán.",
+		"usagesReply": "Használat: {prefix}move <Queue Number>",
+		"result": "<@{author}> 🚚 Áthelyezve **{title}** ide {index} A várólistában.",
+		"args": {
+			"movefrom": "move.args.movefrom",
+			"moveto": "move.args.moveto"
+		}
+	},
+	"nowplaying": {
+		"description": "Mutassa a most lejátszott zenét",
+		"errorNotQueue": "Nincs semmit játszani.",
+		"embedTitle": "Most Szól",
+		"live": " ◉ Élöadás",
+		"timeRemaining": "Hátralévő idö: {time}"
+	},
+	"pause": {
+		"description": "Állítsd meg a most lejátszott zenét",
+		"errorNotQueue": "Nincs semmit megállítanom.",
+		"result": "<@{author}> ⏸ Megállította a zenét."
+	},
+	"ping": {
+		"description": "Mutatja a bot pingjét",
+		"result": "📈 Mostani ping: {ping} ms"
+	},
+	"play": {
+		"description": "Inditsd zenét youtube-rol vagy soundcloudrol.",
+		"errorNotChannel": "Bekell lépned egy hang csatornába ahhoz, hogy zenét inditsd.",
+		"errorNotInSameChannel": "Már bent vagyok egy hangcsatornába {user}",
+		"usageReply": "Helyes használat: {prefix}play <YouTube Link | Video neve | Soundcloud Link>",
+		"missingPermissionConnect": "Nincs jogosultságom hogy belépjek ide.",
+		"missingPermissionSpeak": "Nincs jogosultságom ahhoz hogy beszéljek.",
+		"queueAdded": "✅ **{title}** hozzáadva a lejátszási listához.",
+		"cantJoinChannel": "Nem tudok belépni: {error}",
+		"queueEnded": "❌ Lejátszási Lista véget ért.",
+		"queueError": "Hiba: {error}",
+		"startedPlaying": "🎶 Elkezdtem játszani: **{title}** {url}",
+		"skipSong": "<@{author}> ⏩ Következő zene",
+		"pauseSong": "<@{author}> ⏸ szüneteltette a zenét!.",
+		"resumeSong": "<@{author}> ▶ folytatta a zenét!",
+		"unmutedSong": "<@{author}> 🔊 visszahangosított a zenét",
+		"mutedSong": "<@{author}> 🔇 elnémította a zenét!",
+		"decreasedVolume": "<@{author}> 🔉 csökkentette a hangerőt, a hangerő most {volume}%",
+		"increasedVolume": "<@{author}> 🔊 növelte a hangerőt, a hangerő most {volume}%",
+		"loopSong": "<@{author}> Ismétlés most: {loop}",
+		"stopSong": "<@{author}> ⏹ megállt a zene!",
+		"leaveChannel": "Kilépés a hangcsatornából...",
+		"songNotFound": "play.songNotFound"
+	},
+	"playlist": {
+		"description": "Játsz le egy lejátszási listát a youtuberol",
+		"usagesReply": "Használat: {prefix}playlist <YouTube lejátszási lista link | lejátszási lista név>",
+		"errorNotChannel": "Nem vagy hangcsatornában!",
+		"errorNotInSameChannel": "Más csatornában vagyok {user}",
+		"missingPermissionConnect": "Nem tudok belépni ide mert nincs hozzá jogosultságom",
+		"missingPermissionSpeak": "Nem tudok itt beszélni mert nincs hozzá jogosultságom!",
+		"errorNotFoundPlaylist": "Nem találok ilyen lejátszási listát :(",
+		"fetchingPlaylist": "⌛ Lejátszási lista elindult...",
+		"playlistCharLimit": "\n A lejátszási lista túl nagy...",
+		"startedPlaylist": "<@{author}> Elindította a lejátszási listát",
+		"cantJoinChannel": "Nem tudok belépni a szobába: {error}"
+	},
+	"pruning": {
+		"description": "Botüzenetek ki-be metszése",
+		"errorWritingFile": "Hiba lépett fel a fájl irása közben.",
+		"result": "Üzenet metszése: {result}"
+	},
+	"queue": {
+		"description": "Mutassa a várólistát és most lejátsza.",
+		"missingPermissionMessage": "Nincs jogosultságom hogy belépjek ide vagy rakciot adjak",
+		"errorNotQueue": "❌ **Nem megy semmi ezen a szerveren**",
+		"currentPage": "Aktuális oldal - ",
+		"embedTitle": "Zene várólista\n",
+		"embedCurrentSong": "**Aktuális zene - [{title}]({url})**\n\n{info}"
+	},
+	"remove": {
+		"description": "Zene törlése a várólistábol",
+		"errorNotQueue": "Nincs semmi várólistán.",
+		"usageReply": "Használat: {prefix}remove <Queue Number>",
+		"result": "<@{author}> ❌ törölte **{title}** a várólistábol."
+	},
+	"resume": {
+		"description": "Zene megállitása",
+		"errorNotQueue": "Nincs mit lejátszanom.",
+		"resultNotPlaying": "<@{author}> ▶ megállitotta a muzsikát!",
+		"errorPlaying": "A várólistát nem lehet megállitani."
+	},
+	"search": {
+		"description": "Keress és játsz le zenéket",
+		"usageReply": "Használat: {prefix}{name} <Video Name>",
+		"errorAlreadyCollector": "Egy üzenetgyüjtö már aktív ezen a csatornán.",
+		"errorNotChannel": "Elöször bekell lépned egy hangcsatornába!",
+		"resultEmbedTtile": "**Válaszolj a zene számával lejátszáshoz**",
+		"resultEmbedDesc": "Eredmény: {search}",
+		"optionQuery": "search.optionQuery"
+	},
+	"shuffle": {
+		"description": "Véletlen sorrend",
+		"errorNotQueue": "Nincs várólista",
+		"result": "<@{author}> 🔀 Megváltoztatta a sort"
+	},
+	"skip": {
+		"description": "Az éppen lejátszott dal átugrása",
+		"errorNotQueue": "Nincs olyan zene, amit átugorhatnék neked.",
+		"result": "<@{author}> ⏭ zene átugorva"
+	},
+	"skipto": {
+		"description": "Ugrás a kiválasztott sorszámra",
+		"usageReply": "Használat: {prefix}{name} <Queue Number>",
+		"errorNotQueue": "Nincs várólista.",
+		"errorNotValid": "A várólista {length} zene hosszú!",
+		"result": "<@{author}> ⏭ átugrotta {arg} zenet",
+		"args": {
+			"number": "skipto.args.number"
+		}
+	},
+	"stop": {
+		"description": "Zene megállitása",
+		"errorNotQueue": "Nincs mit megállitani.",
+		"result": "<@{author}> ⏹ megállitotta a zenét!"
+	},
+	"uptime": {
+		"description": "Nézd meg az üzemidöt",
+		"result": "Üzemidö: `{days} day(s),{hours} óra, {minutes} perc, {seconds} másodperc`"
+	},
+	"volume": {
+		"description": "Az éppen lejátszott zene hangerejének módosítása",
+		"errorNotQueue": "Nincs mit lejátszani.",
+		"errorNotChannel": "Elöször lépj be egy hangcsatornába!",
+		"currentVolume": "🔊 Aktuális hangerö: **{volume}%**",
+		"errorNotNumber": "Számot irj be.",
+		"errorNotValid": "0 és 100 között használj számot.",
+		"result": "Hangerö átállitva: **{arg}%**"
+	},
+	"common": {
+		"on": "**aktív**",
+		"off": "**inaktív**",
+		"enabled": "**Engedélyezve**",
+		"disabled": "**Megtagadva**",
+		"errorNotChannel": "Elöször bekell lépned egy hangcsatornába!",
+		"cooldownMessage": "Várj {time} hogy újra használhas a `{name}` parancsot.",
+		"errorCommend": "Hiba történt a parancs végrehajtása során."
+	}
+}
